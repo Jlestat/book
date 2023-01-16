@@ -10,3 +10,11 @@ def about(request):
 
 def contact(request):
     return HttpResponse('<h2>Contacts</h2>')
+
+def products(request, productid=1):
+    output = f'<h1> Product number: {productid}</h1>'
+    return HttpResponse(output)
+
+def users(request, id, name):
+    output = f'<h1> Username: {name} Userid: {id}'
+    return HttpResponse(output)
