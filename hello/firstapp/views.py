@@ -15,6 +15,6 @@ def products(request, productid=1):
     output = f'<h1> Product number: {productid}</h1>'
     return HttpResponse(output)
 
-def users(request, id, name):
+def users(request, id=1, name='Вано'):
     output = f'<h1> Username: {name} Userid: {id}'
     return HttpResponse(output)
