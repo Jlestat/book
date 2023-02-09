@@ -3,7 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect, HttpResponsePermanen
 
 
 def index(request):
-    return HttpResponse('Hello from django')
+    return render(request, "index.html")
 
 def about(request):
     return HttpResponse('<h1> About site</h1>')
