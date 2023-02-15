@@ -8,7 +8,7 @@ def index(request):
     user = {"name": "Максим,", "age": 30}
     addr = ("Виноградная", 23, 45)
     data = {"header": header, "langs": langs, "user": user, "address": addr}
-    return render(request, "firstapp\index_app1.html", context=data)
+    return render(request, "index.html", context=data)
 
 def about(request):
     return HttpResponse('<h1> About site</h1>')
