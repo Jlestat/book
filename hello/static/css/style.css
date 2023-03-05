@@ -4,3 +4,8 @@ body{
 h1{
     color: blue;
 }
+p{
+    font-size: 25px;
+    font-family: "Times New Roman", sans-serif;
+
+}
