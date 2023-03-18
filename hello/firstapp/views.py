@@ -6,7 +6,7 @@ def index(request):
     return render(request, "firstapp/index.html")
 
 def about(request):
-    return HttpResponse('<h1> About site</h1>')
+    return render(request, "firstapp/about.html")
 
 def contact(request):
     return HttpResponseRedirect("/about")
