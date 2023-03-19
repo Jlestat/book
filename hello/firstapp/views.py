@@ -3,7 +3,8 @@ from django.http import HttpResponse, HttpResponseRedirect, HttpResponsePermanen
 
 
 def index(request):
-    return render(request, "firstapp/index.html")
+    data = {'age': 50}
+    return render(request, "firstapp/index.html", context=data)
 
 def about(request):
     return render(request, "firstapp/about.html")

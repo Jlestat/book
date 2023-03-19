@@ -1,4 +1,11 @@
 {% extends "firstapp/base.html" %}
 {% block title %}Index {% endblock %}
 {% block header %}Main page {% endblock header %}
-{% block content %} Link on base and index template {% endblock content %}
+{% block content %}
+    Age of clients
+{% if age > 65 %}
+    <p>Pens</p>
+{% else %}
+    <p>Are not pens</p>
+{% endif %}
+{% endblock content %}
