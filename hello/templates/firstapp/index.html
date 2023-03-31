@@ -5,5 +5,7 @@
 <p>Категория продуктов</p>
 {% for i in cat %}
     <li>{{ i }}</li>
+    {% empty %}
+    <li>Категории продуктов отсутвуют</li>
 {% endfor %}
 {% endblock content %}
