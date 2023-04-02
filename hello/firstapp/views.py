@@ -1,10 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect, HttpResponsePermanentRedirect
 
+from firstapp.forms import UserForm
+
 
 def index(request):
-    cat = ['Ноутбуки', 'Сканеры', 'Диски']
-    return render(request, "firstapp/index.html", context={'cat': cat})
+    userform = UserForm()
+    return render(request, "firstapp/index.html", {"form": userform})
+
 
 def about(request):
     return render(request, "firstapp/about.html")
